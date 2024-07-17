@@ -9,23 +9,20 @@ import coil3.annotation.ExperimentalCoilApi
 import coil3.compose.setSingletonImageLoaderFactory
 import coil3.disk.DiskCache
 import coil3.memory.MemoryCache
-import coil3.network.NetworkFetcher
-import coil3.network.NetworkFetcher.Factory
+import coil3.network.ktor.KtorNetworkFetcherFactory
 import coil3.request.CachePolicy
 import coil3.request.crossfade
 import coil3.util.DebugLogger
 import okio.FileSystem
 import org.koin.compose.KoinContext
-import org.koin.compose.koinInject
 
 @OptIn(ExperimentalCoilApi::class)
 @Composable
 fun ContentView(enableDiskCache: Boolean = true) {
     ArtphoriaTheme {
         KoinContext {
-            val networkFetcherFactory = koinInject<Factory>()
             setSingletonImageLoaderFactory { context ->
-                context.asyncImageLoader(networkFetcherFactory, enableDiskCache)
+                context.asyncImageLoader(enableDiskCache)
             }
 
             ArtphoriaNavGraph()
@@ -37,14 +34,10 @@ fun ContentView(enableDiskCache: Boolean = true) {
 /**
  * Create a new [ImageLoader] with the [PlatformContext].
  */
-
-fun PlatformContext.asyncImageLoader(
-    networkFetcherFactory: NetworkFetcher.Factory,
-    enableDiskCache: Boolean,
-): ImageLoader {
+fun PlatformContext.asyncImageLoader(enableDiskCache: Boolean): ImageLoader {
     val imageLoaderBuilder = ImageLoader
         .Builder(this)
-        .components { add(networkFetcherFactory) }
+        .components { add(KtorNetworkFetcherFactory()) }
         .crossfade(true)
         .networkCachePolicy(CachePolicy.ENABLED)
         .diskCachePolicy(CachePolicy.ENABLED)
