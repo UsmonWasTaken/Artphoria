@@ -32,14 +32,14 @@ Multiplatform by sharing business logic across Android, Desktop, and Web platfor
 ### Android
 
 <div align="center">
-  <img style="float: left; margin-right: 15px;" src="https://github.com/user-attachments/assets/7d5c9d12-c8d2-45c0-897a-1992e320f18c" width="33%">
-  <img style="float: left; margin-left: 15px; margin-right: 15px;" src="https://github.com/user-attachments/assets/10e72c61-1b23-4f58-90c4-169be46cab14" width="33%">
-  <img style="float: left; margin-left: 15px;" src="https://github.com/user-attachments/assets/4dff5135-de8a-47c0-b8be-0a5453aec84d" width="33%">
+  <img style="float: left; margin-right: 15px;" src="https://github.com/user-attachments/assets/7d5c9d12-c8d2-45c0-897a-1992e320f18c" width="31%">
+  <img style="float: left; margin-left: 15px; margin-right: 15px;" src="https://github.com/user-attachments/assets/10e72c61-1b23-4f58-90c4-169be46cab14" width="31%">
+  <img style="float: left; margin-left: 15px;" src="https://github.com/user-attachments/assets/4dff5135-de8a-47c0-b8be-0a5453aec84d" width="31%">
 </div>
 <div align="center">
-  <img style="float: left; margin-right: 15px;" src="https://github.com/user-attachments/assets/8ef969a3-a054-40e1-94a1-36f96ff54360" width="33%">
-  <img style="float: left; margin-left: 15px; margin-right: 15px;" src="https://github.com/user-attachments/assets/7b8210c4-4b33-4992-a00e-3073d7737104" width="33%">
-  <img style="float: left; margin-left: 15px;" src="https://github.com/user-attachments/assets/a1fb56f5-b16a-42a3-b8f1-4fb1f4c954ac" width="33%">
+  <img style="float: left; margin-right: 15px;" src="https://github.com/user-attachments/assets/8ef969a3-a054-40e1-94a1-36f96ff54360" width="31%">
+  <img style="float: left; margin-left: 15px; margin-right: 15px;" src="https://github.com/user-attachments/assets/7b8210c4-4b33-4992-a00e-3073d7737104" width="31%">
+  <img style="float: left; margin-left: 15px;" src="https://github.com/user-attachments/assets/a1fb56f5-b16a-42a3-b8f1-4fb1f4c954ac" width="31%">
 </div>
 
 ### Desktop
